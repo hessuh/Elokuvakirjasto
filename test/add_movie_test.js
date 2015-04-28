@@ -5,11 +5,29 @@ describe('Add movie', function(){
 
   	beforeEach(function(){
   		// Lisää moduulisi nimi tähän
-    	module('MyAwesomeModule');
+    	module('MovieApp');
 
     	FirebaseServiceMock = (function(){
+
+			var movies = [
+				{
+				  title: 'Hi girls!'
+				},
+				{
+				  title: 'Mikä boogie?'
+				},
+				{
+				  title: 'Angular on parasta!'
+				}
+			];
+
 			return {
 				// Toteuta FirebaseServicen mockatut metodit tähän
+
+				addMovies: function(movie){
+				  movies.$add(data);
+				}
+
 			}
 		})();
 

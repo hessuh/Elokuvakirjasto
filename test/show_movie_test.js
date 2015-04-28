@@ -16,6 +16,9 @@ describe('Show movie', function(){
 		RouteParamsMock = (function(){
 			return {
 				// Toteuta mockattu $routeParams-muuttuja tähän
+				getMovies: function(){
+				  return movies;
+				}
 			}
 		});
 

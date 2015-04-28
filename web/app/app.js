@@ -1,1 +1,1 @@
-// Toteuta moduulisi tänne
+var MovieApp = angular.module('MovieApp', ['ngRoute', 'firebase']);
